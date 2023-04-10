@@ -2,7 +2,7 @@
 ## Introduction: 
 This is a library that can be used to process data including data cleaning, summary the descriptive statistics, data visulazation, and build exploratory data model. 
 ## Data Type: 
-Clinical data contained participants' info that need to be analyzed. 
+Clinical data contained participants' info and measurement data that need to be analyzed. 
 ## Modules: 
 1. Part 1: Data cleaning: identifying and handling missing values, detecting and removing outliers, and transforming variables as needed. This can help to ensure that the data is ready for analysis and that any potential problems or biases are addressed.
 2. Part 2: Descriptive statistics: computing descriptive statistics on the data, such as mean, median, standard deviation, and range. These statistics can help to summarize the main characteristics of the data and provide a baseline for further analysis.
