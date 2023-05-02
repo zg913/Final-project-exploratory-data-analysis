@@ -49,7 +49,7 @@ class patient:
         if (earliest_date.month, earliest_date.day) < (
             dob.month,
             dob.day,
-        ):  # O(1)
+        ):  
             earl_age = earliest_date.year - dob.year - 1  # O(1)
         else:  # O(1)
             earl_age = earliest_date.year - dob.year  # O(1)
