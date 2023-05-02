@@ -35,7 +35,7 @@ class patient:
             age = today.year - dob.year
         return age
 
-    def early_lab_age(self, lab_name: str) -> int:  # O(1)
+    def early_lab_age(self, lab_name: str) -> int:
         """Find the earliest lab record and calculate the age at that time."""
         lab_times = []  # O(1)
         for lab in self.labs:
