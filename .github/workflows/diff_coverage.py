@@ -9,6 +9,7 @@ from typing import Any, Iterable
 
 def get_changed_lines(diff: str) -> dict[str, set[int]]:
     """Get the lines that were changed or added.
+
     Adpated from https://stackoverflow.com/a/12179492/13242055
     by John Mellor
     """
@@ -121,6 +122,7 @@ def generate_report_line(
 
 def generate_report(coverage: dict[str, dict[str, set[int]]]) -> str:
     """Generate report.
+
     EXAMPLE:
     Name             Stmts   Miss  Cover   Missing
     ----------------------------------------------
@@ -189,6 +191,3 @@ if __name__ == "__main__":
     parser.add_argument("coverage_json")
     args = parser.parse_args()
     main(args.diff_txt, args.coverage_json)
-    
-    
-    
