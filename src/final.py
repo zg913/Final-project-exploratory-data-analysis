@@ -203,7 +203,7 @@ def population_distribution(
         for time in times
     ]
 
-    # Calculate linear regression
+    # Calculate linear regression line
     A = np.vstack([numerical_times, np.ones(len(numerical_times))]).T
     m, c = np.linalg.lstsq(A, pop_values, rcond=None)[0]
 
