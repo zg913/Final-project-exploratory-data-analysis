@@ -37,7 +37,7 @@ class patient:
 
     def early_lab_age(self, lab_name: str) -> int:
         """Find the earliest lab record and calculate the age at that time."""
-        lab_times = []  # O(1)
+        lab_times = []
         for lab in self.labs:
             if lab.lab_name == lab_name:
                 lab_time = datetime.strptime(
