@@ -20,6 +20,7 @@ jobs:
       run: |
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         if [ -f requirements-test.txt ]; then pip install -r requirements-test.txt; fi
+
     - name: Run pytest
       continue-on-error: true
       run: |
@@ -91,6 +92,3 @@ jobs:
           cat test_report.txt
         fi
         exit $(cat exit_code.txt)
-        
-        
-        
