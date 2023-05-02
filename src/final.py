@@ -42,8 +42,8 @@ class patient:
             if lab.lab_name == lab_name:
                 lab_time = datetime.strptime(
                     lab.datetime, "%Y-%m-%d %H:%M:%S.%f"
-                ).date()  # O(1)
-                lab_times.append(lab_time)  # O(1)
+                ).date()  # O(1
+                lab_times.append(lab_time)
         earliest_date = max(lab_times)  # O(1)
         dob = datetime.strptime(self.date_birth, "%Y-%m-%d %H:%M:%S.%f").date()
         if (earliest_date.month, earliest_date.day) < (
