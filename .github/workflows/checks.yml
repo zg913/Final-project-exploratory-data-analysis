@@ -20,6 +20,7 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install black mypy pycodestyle pydocstyle
+
     - name: Run checks
       run: |
         black --diff --check $(git ls-files '*.py')
