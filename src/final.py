@@ -35,9 +35,9 @@ class patient:
             age = today.year - dob.year
         return age
 
-    def early_lab_age(self, lab_name: str) -> int:
+    def early_lab_age(self, lab_name: str) -> int:  # O(1)
         """Find the earliest lab record and calculate the age at that time."""
-        lab_times = []
+        lab_times = []  # O(1)
         for lab in self.labs:
             if lab.lab_name == lab_name:
                 lab_time = datetime.strptime(
@@ -203,7 +203,7 @@ def population_distribution(
         for time in times
     ]
 
-    # Calculate linear regression
+    # Calculate linear regression line
     A = np.vstack([numerical_times, np.ones(len(numerical_times))]).T
     m, c = np.linalg.lstsq(A, pop_values, rcond=None)[0]
 
